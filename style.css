@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@500&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(44, 3, 3);
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+}
+.movie {
+  background-color: rgb(61, 11, 2);
+  border-radius: 3px;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  margin: 1rem;
+  width: 300px;
+}
+
+.movie-info {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  letter-spacing: 1px;
+}
+
+.movie img {
+  width: 100%;
+}
+
+.movie-info h3 {
+  margin: 0;
+}
+
+.movie-info span {
+  background-color: rgb(54, 10, 2);
+  border-radius: 3px;
+  padding: 0.25rem 0.5rem;
+}
+
+header {
+  background-color: rgb(78, 14, 4);
+  padding: 1.5rem;
+  display: flex;
+  justify-content: flex-end;
+}
+.search {
+  background-color: transparent;
+  border: 2px solid;
+  border-radius: 50px;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+}
+
+.search::placeholder {
+  color: rgb(39, 3, 3);
+}
+
+.search:focus {
+  background-color: rgb(189, 158, 154);
+  outline: none;
+}
