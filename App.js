@@ -22,7 +22,7 @@ async function getMovies(a) {
 function searchMovie(movies) {
   main.innerHTML = "";
   movies.forEach((movie) => {
-    const { poster_path, title, vote_average } = movie;
+    const { poster_path, title, vote_average, overview } = movie;
     const movieEl = document.createElement("div");
     movieEl.classList.add("movie");
 
@@ -36,6 +36,11 @@ function searchMovie(movies) {
           <h3>${title}</h3>
           <span>${vote_average}</span>
         </div>
+        <div class="overview">
+           <h3>Overview:</h3>
+            ${overview}
+        </div>
+        
       `;
     main.appendChild(movieEl);
   });

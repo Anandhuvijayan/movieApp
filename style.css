@@ -19,6 +19,7 @@ main {
   border-radius: 3px;
   box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
   overflow: hidden;
+  position: relative;
   margin: 1rem;
   width: 300px;
 }
@@ -60,10 +61,30 @@ header {
 }
 
 .search::placeholder {
-  color: rgb(39, 3, 3);
+  color: rgb(180, 131, 143);
 }
 
 .search:focus {
   background-color: rgb(189, 158, 154);
   outline: none;
+}
+.overview {
+  background-color: rgb(212, 69, 69);
+  padding: 2rem;
+  position: absolute;
+  max-height: 100%;
+  overflow: auto;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  transform: translateY(101%);
+  transition: transform 0.3s ease-in;
+}
+
+.overview h3 {
+  margin-top: 0;
+}
+
+.movie:hover .overview {
+  transform: translateY(0);
 }
